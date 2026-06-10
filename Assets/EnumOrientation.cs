@@ -2,8 +2,8 @@ using UnityEngine;
 
 public enum EnumOrientation
 {
-    North,
-    east,
-    south,
-    west
+    North = 0,
+    East = 1,
+    South = 2,
+    West = 3
 }
