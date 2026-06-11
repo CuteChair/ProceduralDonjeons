@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "DebugInputs",
+    "maps": [
+        {
+            "name": "Debug",
+            "id": "0be04b48-e96e-48b0-9fd5-ead36f8a1b34",
+            "actions": [
+                {
+                    "name": "Generate room",
+                    "type": "Button",
+                    "id": "8b05e838-5ee8-4865-9568-3876afb7a898",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "077e5571-132c-439b-94e2-42ca6db34697",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Generate room",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

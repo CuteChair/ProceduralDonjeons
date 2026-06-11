@@ -47,6 +47,10 @@ public class DoorData : MonoBehaviour
         return _doorFramePosition;
     }
 
+    public EnumOrientation GetDoorDefaultDirection()
+    {
+        return _doorDefaultFacingDirection;
+    }
     public EnumOrientation GetDoorFacingDirection()
     {
         

@@ -205,8 +205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00085479196, y: 0.9483449, z: -0.3172298, w: -0.0025584993}
-  m_LocalPosition: {x: -0.40581876, y: 13.165649, z: 16.217575}
+  m_LocalRotation: {x: 0.004306278, y: 0.9171439, z: -0.39840987, w: 0.009907693}
+  m_LocalPosition: {x: -1.4380372, y: 29.587944, z: 29.571083}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -701,6 +701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959448460}
   - component: {fileID: 959448461}
+  - component: {fileID: 959448462}
   m_Layer: 0
   m_Name: MapManager
   m_TagString: Untagged
@@ -737,11 +738,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapGenerator
   _availableRooms:
   - {fileID: 787192777283833785, guid: 1678a5d3aa963b64e80f2a681a571356, type: 3}
+  - {fileID: 1524150681817085990, guid: 7111725016241c14ea23ef41c18a7602, type: 3}
   _mapGenerationSize: 0
   _smallMapData: {fileID: 11400000, guid: 74f7c9b3542da924b9289a6a7a8ffa8a, type: 2}
   _mediumMapData: {fileID: 11400000, guid: 0ba5274e55eeace41bd1bd4d09a9124d, type: 2}
   _largeMapData: {fileID: 11400000, guid: 8770f076fac567d49b37396c6411a809, type: 2}
   _generatedRoomsList: []
+  _debugMode: 0
+--- !u!114 &959448462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959448459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 96cbb85a722ac534e8c9361b2c747772, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8b05e838-5ee8-4865-9568-3876afb7a898
+    m_ActionName: 'Debug/Generate room[/Keyboard/space]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Debug
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1098545858
 GameObject:
   m_ObjectHideFlags: 0
