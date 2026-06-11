@@ -392,6 +392,7 @@ MonoBehaviour:
   - {fileID: 7521313145888555250}
   - {fileID: 5729718439193012511}
   - {fileID: 6365416957601753823}
+  _roomID: 0
 --- !u!1 &879638467986270133
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,8 +528,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorData
   _doorSnapPointPosition: {fileID: 3480198655156813064}
-  _doorFacingDirection: 0
+  _doorFramePosition: {fileID: 442094389658748039}
+  _doorDefaultFacingDirection: 0
   _parentRoom: {fileID: 6510076737564160188}
+  _currentFacingDirection: 0
 --- !u!1 &1126984022133319869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,8 +1119,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorData
   _doorSnapPointPosition: {fileID: 1638339664956487157}
-  _doorFacingDirection: 1
+  _doorFramePosition: {fileID: 519610743424832426}
+  _doorDefaultFacingDirection: 1
   _parentRoom: {fileID: 6510076737564160188}
+  _currentFacingDirection: 0
 --- !u!1 &7662215424701197496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,8 +1258,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorData
   _doorSnapPointPosition: {fileID: 8863344282451786887}
-  _doorFacingDirection: 2
+  _doorFramePosition: {fileID: 2723333361138127517}
+  _doorDefaultFacingDirection: 2
   _parentRoom: {fileID: 6510076737564160188}
+  _currentFacingDirection: 0
 --- !u!1 &8658893972632364231
 GameObject:
   m_ObjectHideFlags: 0

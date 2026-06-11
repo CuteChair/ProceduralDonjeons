@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RoomInstance : MonoBehaviour
@@ -11,6 +12,11 @@ public class RoomInstance : MonoBehaviour
     [SerializeField]
     private DoorData[] _availableDoors;
 
+    public static int RoomIDCounter;
+
+    [SerializeField]
+    private int _roomID;
+
     public DoorData[] GetAvailableDoors() { return _availableDoors; }
 
     public EnumOrientation GetCurrentRoomOrientation() { return _currentRoomOrientation; }
@@ -18,6 +24,10 @@ public class RoomInstance : MonoBehaviour
     private void Awake()
     {
         _currentRoomOrientation = _roomData.DefaultRoomOrientation;
+
+        RoomIDCounter++; // Incrementing the static RoomIDCounter to assign a unique ID to each room instance
+
+        _roomID = RoomIDCounter; // Assigning the current value of RoomIDCounter to the _roomID field of the room instance
     }
 
     private void OnEnable()
@@ -38,5 +48,5 @@ public class RoomInstance : MonoBehaviour
             _currentRoomOrientation = newOrientation; // Updating the current room orientation to the new orientation received from the event
     }
 
-   
+    public int GetRoomID() => _roomID;
 }
